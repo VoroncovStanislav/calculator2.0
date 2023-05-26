@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор окупаемости</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calc">
+                <div class="calc__title">
+                    <h1>Расчет срока окупаемости и ставки капитализации объекта</h1>
+                </div>
+                <div class="calc__inputs">
+                    <form class="forma" action="#">
+                        <div class="form_inputs">
+                            <label for="">Стоимость недвижимости</label>
+                            <input id="price" type="text" placeholder="0">
+                            <label for="">Доходы(в месяц)</label>
+                            <input id="dohod" type="text" placeholder="0">
+                            <label for="">Расходы(в месяц)</label>
+                            <input id="rashod" type="text" placeholder="0"> 
+                        </div>
+                        <div class="knopki">
+                            <button onclick="rashet()">Рассчитать</button>
+                            <button onclick="reset()">Очистить</button>      
+                        </div>
+                            
+                    </form>
+                    
+                    <p class="okupaemost"></p>
+                    <p class="kapitalizacia"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

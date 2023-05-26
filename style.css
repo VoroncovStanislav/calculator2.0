@@ -1,0 +1,59 @@
+body{
+    background-color:#1C3246;
+}
+.calc {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.form_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calc__title h1 {
+    color: white;
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.form_inputs label {
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+    font-style: italic;
+}
+.form_inputs input {
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+.knopki button {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: coral;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.knopki button:active {
+    transform: scale(1.1);
+}
+.okupaemost_itog, .kapitalizacia_itog {
+    margin-top: 10px;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+@media (max-width:500px) {
+    .form_inputs input {
+        width: 90%;
+    }
+}
+
+
